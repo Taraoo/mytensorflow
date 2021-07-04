@@ -1,0 +1,30 @@
+C:\Users\arao\Desktop\20210525\tensorflow>bazel build --config=opt --config=monolithic --config=cuda //tensorflow/cc/tool:freeze_saved_model
+WARNING: The following configs were expanded more than once: [monolithic, cuda, using_cuda]. For repeatable flags, repeats are counted twice and may lead to unexpected behavior.
+INFO: Options provided by the client:
+  Inherited 'common' options: --isatty=1 --terminal_columns=120
+INFO: Reading rc options for 'build' from c:\users\arao\desktop\20210525\tensorflow\.bazelrc:
+  Inherited 'common' options: --experimental_repo_remote_exec
+INFO: Options provided by the client:
+  'build' options: --python_path=C:/Users/arao/AppData/Local/Programs/Python/Python38/python.exe
+INFO: Reading rc options for 'build' from c:\users\arao\desktop\20210525\tensorflow\.bazelrc:
+  'build' options: --apple_platform_type=macos --define framework_shared_object=true --define open_source_build=true --java_toolchain=//third_party/toolchains/java:tf_java_toolchain --host_java_toolchain=//third_party/toolchains/java:tf_java_toolchain --define=use_fast_cpp_protos=true --define=allow_oversize_protos=true --spawn_strategy=standalone -c opt --announce_rc --define=grpc_no_ares=true --noincompatible_remove_legacy_whole_archive --noincompatible_prohibit_aapt1 --enable_platform_specific_config --config=v2
+INFO: Reading rc options for 'build' from c:\users\arao\desktop\20210525\tensorflow\.tf_configure.bazelrc:
+  'build' options: --action_env PYTHON_BIN_PATH=C:/Users/arao/AppData/Local/Programs/Python/Python38/python.exe --action_env PYTHON_LIB_PATH=C:/Users/arao/AppData/Local/Programs/Python/Python38/lib/site-packages --python_path=C:/Users/arao/AppData/Local/Programs/Python/Python38/python.exe --config=xla --action_env CUDA_TOOLKIT_PATH=C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1 --action_env TF_CUDA_COMPUTE_CAPABILITIES=7.5 --config=cuda --define=override_eigen_strong_inline=true --action_env TF_CONFIGURE_IOS=0
+INFO: Found applicable config definition build:v2 in file c:\users\arao\desktop\20210525\tensorflow\.bazelrc: --define=tf_api_version=2 --action_env=TF2_BEHAVIOR=1
+INFO: Found applicable config definition build:xla in file c:\users\arao\desktop\20210525\tensorflow\.bazelrc: --action_env=TF_ENABLE_XLA=1 --define=with_xla_support=true
+INFO: Found applicable config definition build:cuda in file c:\users\arao\desktop\20210525\tensorflow\.bazelrc: --config=using_cuda --define=using_cuda_nvcc=true
+INFO: Found applicable config definition build:using_cuda in file c:\users\arao\desktop\20210525\tensorflow\.bazelrc: --define=using_cuda=true --action_env TF_NEED_CUDA=1 --crosstool_top=@local_config_cuda//crosstool:toolchain
+INFO: Found applicable config definition build:opt in file c:\users\arao\desktop\20210525\tensorflow\.tf_configure.bazelrc: --copt=/arch:AVX --define with_default_optimizations=true
+INFO: Found applicable config definition build:monolithic in file c:\users\arao\desktop\20210525\tensorflow\.bazelrc: --define framework_shared_object=false
+INFO: Found applicable config definition build:cuda in file c:\users\arao\desktop\20210525\tensorflow\.bazelrc: --config=using_cuda --define=using_cuda_nvcc=true
+INFO: Found applicable config definition build:using_cuda in file c:\users\arao\desktop\20210525\tensorflow\.bazelrc: --define=using_cuda=true --action_env TF_NEED_CUDA=1 --crosstool_top=@local_config_cuda//crosstool:toolchain
+INFO: Found applicable config definition build:windows in file c:\users\arao\desktop\20210525\tensorflow\.bazelrc: --copt=/w --copt=/D_USE_MATH_DEFINES --host_copt=/D_USE_MATH_DEFINES --cxxopt=/std:c++14 --host_cxxopt=/std:c++14 --config=monolithic --copt=-DWIN32_LEAN_AND_MEAN --host_copt=-DWIN32_LEAN_AND_MEAN --copt=-DNOGDI --host_copt=-DNOGDI --linkopt=/DEBUG --host_linkopt=/DEBUG --linkopt=/OPT:REF --host_linkopt=/OPT:REF --linkopt=/OPT:ICF --host_linkopt=/OPT:ICF --experimental_strict_action_env=true --verbose_failures --distinct_host_configuration=false
+INFO: Found applicable config definition build:monolithic in file c:\users\arao\desktop\20210525\tensorflow\.bazelrc: --define framework_shared_object=false
+ERROR: Skipping '//tensorflow/cc/tool:freeze_saved_model': no such package 'tensorflow/cc/tool': BUILD file not found in any of the following directories. Add a BUILD file to a directory to mark it as a package.
+ - C:/users/arao/desktop/20210525/tensorflow/tensorflow/cc/tool
+WARNING: Target pattern parsing failed.
+ERROR: no such package 'tensorflow/cc/tool': BUILD file not found in any of the following directories. Add a BUILD file to a directory to mark it as a package.
+ - C:/users/arao/desktop/20210525/tensorflow/tensorflow/cc/tool
+INFO: Elapsed time: 12.175s
+INFO: 0 processes.
+FAILED: Build did NOT complete successfully (0 packages loaded)
